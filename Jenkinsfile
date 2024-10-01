@@ -8,9 +8,8 @@ pipeline {
     trigger{
         githubPush()
     }
-
     
-    stages{
+    stages {
         stage('Install dependencies'){
             steps {
                 echo 'Installing...'
@@ -22,15 +21,6 @@ pipeline {
                 echo 'Running test'
                 sh 'npm run test'
             }
-        }
-    }
-
-    post {
-        succes {
-            echo 'Todo fue bien'
-        }
-        failure {
-            echo 'Algo falló'
         }
     }
 }
