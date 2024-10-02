@@ -4,6 +4,10 @@ pipeline {
     tools {
         nodejs "nodejs-18"
     }
+
+    triggers{
+        githubPush()
+    }
     
     stages {
         stage('Install dependencies'){
