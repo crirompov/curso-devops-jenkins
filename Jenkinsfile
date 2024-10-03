@@ -2,7 +2,7 @@ pipeline {
     agent any 
 
     environment {
-        FLY_API_TOKEN_CORRECCION=credentials('FLY_API_TOKEN_CORRECCION')
+        // FLY_API_TOKEN_CORRECCION=credentials('FLY_API_TOKEN_CORRECCION')
     }
 
     tools {
